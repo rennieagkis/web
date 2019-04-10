@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="../Styles/rennie.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+
+<div class="log">
+<div class="image"><img src="../Images/head.jpg" align="" width="100%" /></div>
+
+<div class="horizontal"  align="center">
+  <ul>
+  <li class="hov"><a href="home.xhtml"><span class="white">Home</span></a></li>
+  <li class="hov"><a class="hov" href="gallery.xhtml"><span class="white">Gallery</span></a></li>
+   <li class="hov"><a class="hov" href="about.xhtml"><span class="white">Profile</span></a></li>
+  <li class="hov"><a class="hov" href="about.xhtml"><span class="white">About</span></a></li>
+  <li class="hov"><a class="hov" href="contact.xhtml"><span class="white">Contact</span></a></li>
+<li>
+<li class="dropdown">
+  <form method="link" action="../Text/Signup.html">
+<button class="dropbtn">SignUp</button>
+</form>
+  <div class="content">
+  <a href="../Text/login.html">Login</a>
+  </div>
+  </li>
+</li>
+ </ul>
+ 
+   </div>
+   
+   
+
+<p class="txlog">LOGIN FIRST!!!</p>
+<p class="txlog">User Name:&nbsp;&nbsp;<input type="text" name="username" /></p>
+<p class="txlog">Password:&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="password" onkeyup="mask(this.value)" /></p>
+
+<p class="txlog" id="renren"><button class="btn" onclick="rennie()"/>Submit</button></p>
+<form method="LINK" action="../Text/Forgot.html">
+<p class="txlog"><button class="btn"><font size="-1"><span class="white">Forgot your Password</span></font></button></p>
+</form>
+<form method="LINK" action="../Text/SignUp.html">
+<p class="txlog"><button class="btn"><font size="-1"><span class="white">SignUp</span></font></button></p>
+</form>
+</div>
+</div>
+</div>
+
+<script>
+function rennie()
+{
+window.alert("Congratulations!!!");
+var greeting;
+var time = new Date().getHours();
+if (time < 12){
+greeting = "goodmorning";
+}
+else if (time < 18){
+greeting = "goodafternoon";}
+else {greeting ="goodevening";
+}
+switch (new Date().getDay()) {
+    case 6:
+        text = "Today is Saturday";
+        break;
+    case 0:
+        text = "Today is Sunday";
+        break;
+    default:
+        text = "Looking forward to the Weekend";
+}
+document.getElementById.innerHTML = window.alert(greeting);
+}
+
+</script>
+
+
+</body>
+</html>
